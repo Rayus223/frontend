@@ -929,7 +929,7 @@ body, html {
     padding: 1.6rem;
     border-radius: 50px;
     margin: 0 auto;
-    font-size: 2.8rem !important;  /* Added !important */
+    font-size: 2rem !important;  /* Added !important */
     font-weight: 500;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
