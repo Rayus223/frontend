@@ -880,6 +880,7 @@ body, html {
     align-items: center;
     gap: 3rem;
     padding: 1rem;
+    padding-right: 1rem;
   }
 
   .role-card {
