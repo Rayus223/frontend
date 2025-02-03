@@ -881,6 +881,8 @@ body, html {
     gap: 3rem;
     padding: 1rem;
     padding-right: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
   }
 
   .role-card {
