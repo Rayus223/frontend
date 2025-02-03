@@ -889,8 +889,8 @@ body, html {
     border-radius: 2rem;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    width: 500px;  /* Reduced width */
-    min-height: 150px;  /* Increased height */
+    width: 250px;  /* Reduced width */
+    min-height: 90px;  /* Increased height */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
