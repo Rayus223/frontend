@@ -831,17 +831,6 @@ body, html {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* Section 2 */
 
 .role-heading {
@@ -880,9 +869,6 @@ body, html {
     align-items: center;
     gap: 3rem;
     padding: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
   }
 
   .role-card {
@@ -891,8 +877,8 @@ body, html {
     border-radius: 2rem;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    width: 250px;  /* Reduced width */
-    min-height: 90px;  /* Increased height */
+    width: 350px;  /* Reduced width */
+    min-height: 150px;  /* Increased height */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -929,12 +915,26 @@ body, html {
     padding: 1.6rem;
     border-radius: 50px;
     margin: 0 auto;
-    font-size: 2rem !important;  /* Added !important */
+    font-size: 2.8rem !important;  /* Added !important */
     font-weight: 500;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 .section-2 {
   padding: 4rem 4rem;  /* Reduced from 10rem to 4rem */
   background-color: #f8f8f8;
