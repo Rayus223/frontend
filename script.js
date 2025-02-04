@@ -275,7 +275,7 @@ async function handleVacancyApply(button) {
   }
 
   try {
-    const response = await fetch(`http://localhost:5000/api/teacher-apply/apply-vacancy/${vacancyId}`, {
+    const response = await fetch(`http://api.dearsirhometuition.com/api/teacher-apply/apply-vacancy/${vacancyId}`, {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${token}`,
