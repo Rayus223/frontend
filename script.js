@@ -50,41 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-//animation for section 2 
 
-// Intersection Observer for scroll animations
-const observerCallback = (entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      // Add visible class to heading
-      const heading = entry.target.querySelector('.role-heading');
-      if (heading) heading.classList.add('visible');
-      
-      // Add visible class to cards
-      const cards = entry.target.querySelectorAll('.role-card');
-      cards.forEach(card => card.classList.add('visible'));
-    } else {
-      // Remove visible class when section is out of view
-      const heading = entry.target.querySelector('.role-heading');
-      if (heading) heading.classList.remove('visible');
-      
-      const cards = entry.target.querySelectorAll('.role-card');
-      cards.forEach(card => card.classList.remove('visible'));
-    }
-  });
-};
-
-// Create observer
-const observer = new IntersectionObserver(observerCallback, {
-  threshold: 0.2,
-  rootMargin: '0px'
-});
-
-// Observe section-2
-document.addEventListener('DOMContentLoaded', function() {
-  const section2 = document.querySelector('.section-2');
-  if (section2) observer.observe(section2);
-});
 
 
 
