@@ -917,20 +917,6 @@ body, html {
     font-weight: 500;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 .section-2 {
   padding: 4rem 4rem;  /* Reduced from 10rem to 4rem */
   background-color: #f8f8f8;
@@ -938,13 +924,7 @@ body, html {
   position: relative;
 }
 
-.section-2::before {
-  content: '';
-  position: absolute;
 
-  background-color: rgba(255, 255, 255, 0.97);
-  z-index: 1;
-}
 
 .section-content {
   position: relative;
@@ -962,6 +942,7 @@ body, html {
   color: #1F2937;
   margin-bottom: 6rem;
   font-weight: 600;
+
   transform: translateY(50px);
 }
 
@@ -973,6 +954,7 @@ body, html {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   cursor: pointer;
   transform: translateY(50px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   flex: 0 1 300px;
 }
 
@@ -986,16 +968,6 @@ body, html {
   margin: 0 auto;  /* Center the container */
 }
 
-
-
-
-
-
-/* Hover effect */
-.role-card:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
 
 
 
@@ -1093,6 +1065,7 @@ body, html {
     flex: 0 1 300px;  /* Slightly smaller on medium screens */
   }
 }
+
 
 
 /* End of Section 2 */
