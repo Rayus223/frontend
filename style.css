@@ -840,8 +840,8 @@ body, html {
   font-weight: 500;
   font-family: "Noto Serif Hentaigana", serif;
 
-  opacity: 0;  /* Start hidden */
-  animation: fadeUp 0.8s ease forwards;
+
+ 
   animation-play-state: paused;
 }
 
