@@ -37,6 +37,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+document.getElementById("contactfooter").addEventListener("click", function() {
+        document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
+    });
+
 
 // for loading of 3d model
 
