@@ -3,8 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&family=Noto+Serif+Todhri&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap');
 
 *:not(.navbar-link, .navbar-link, .section-title *) {
@@ -830,7 +828,21 @@ body, html {
 
 
 
-  /* Section 2 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section 2 */
 
 .role-heading {
   text-align: center;
@@ -838,11 +850,8 @@ body, html {
   color: #1F2937;
   margin-bottom: 6rem;  /* Reduced from 10rem to 6rem */
   font-weight: 500;
-  font-family: "Noto Serif Hentaigana", serif;
+  font-family: "Macondo", serif;
 
-
- 
- 
 }
 
 
@@ -1065,7 +1074,6 @@ body, html {
     flex: 0 1 300px;  /* Slightly smaller on medium screens */
   }
 }
-
 
 
 /* End of Section 2 */
@@ -2567,66 +2575,3 @@ body, html {
 .testimonial-card:nth-child(1) { transition-delay: 0.2s; }
 .testimonial-card:nth-child(2) { transition-delay: 0.4s; }
 .testimonial-card:nth-child(3) { transition-delay: 0.6s; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.privacy-policy-container {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 2rem;
-}
-
-.privacy-header {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.logo-container {
-  margin-bottom: 1rem;
-}
-
-.privacy-logo {
-  max-width: 150px;
-  height: auto;
-}
-
-.privacy-content {
-  line-height: 1.6;
-}
-
-.contact-section {
-  background-color: #f5f5f5;
-  padding: 2rem;
-  border-radius: 8px;
-  margin-top: 2rem;
-}
-
-.contact-details {
-  margin-top: 1rem;
-}
-
-.contact-details p {
-  margin: 0.5rem 0;
-}
-
-.contact-details i {
-  margin-right: 10px;
-  color: #033451;
-}
