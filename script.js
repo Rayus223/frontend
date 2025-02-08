@@ -136,7 +136,7 @@ function updateNavButtons() {
 
 async function loadVacancies() {
   try {
-    const response = await fetch('http://localhost:5000/api/vacancies/featured');
+    const response = await fetch('https://api.dearsirhometuition.com/api/vacancies/featured');
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
@@ -240,7 +240,7 @@ async function handleVacancyApply(button) {
   }
 
   try {
-    const response = await fetch(http://localhost:5000/api/teacher-apply/apply-vacancy/${vacancyId}, {
+    const response = await fetch(https://api.dearsirhometuition.com/api/teacher-apply/apply-vacancy/${vacancyId}, {
       method: 'POST',
       headers: {
         'Authorization': Bearer ${token},
