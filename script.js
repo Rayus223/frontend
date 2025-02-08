@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
 // for vacancy home tab section 3
 
 let currentSlide = 0;
@@ -119,7 +120,7 @@ function slideVacancies(direction) {
     currentSlide * -100 : // Full width slide on mobile
     currentSlide * -(100 / cardsPerView) * cardsPerView; // Desktop sliding
 
-  slider.style.transform = `translateX(${translation}%)`;
+  slider.style.transform = translateX(${translation}%);
   updateNavButtons();
 }
 
@@ -239,10 +240,10 @@ async function handleVacancyApply(button) {
   }
 
   try {
-    const response = await fetch(`http://localhost:5000/api/teacher-apply/apply-vacancy/${vacancyId}`, {
+    const response = await fetch(http://localhost:5000/api/teacher-apply/apply-vacancy/${vacancyId}, {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${token}`,
+        'Authorization': Bearer ${token},
         'Content-Type': 'application/json'
       }
     });
