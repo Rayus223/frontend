@@ -849,9 +849,11 @@ body, html {
   font-size: 10rem;
   color: #1F2937;
   margin-bottom: 6rem;  /* Reduced from 10rem to 6rem */
-  font-weight: 500;
+  font-weight: 700 !important;
   font-family: "Macondo", serif;
 
+  animation: fadeUp 0.8s ease forwards;
+  animation-play-state: paused;
 }
 
 
@@ -868,7 +870,7 @@ body, html {
     font-size: 3.2rem;
     color: #1F2937;
     margin-bottom: 4rem;
-    font-weight: 600;
+    font-weight: 700 !important;
   }
 
   .role-cards-container {
@@ -885,8 +887,8 @@ body, html {
     border-radius: 2rem;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    width: 220px;  /* Reduced width */
-    min-height: 60px;  /* Increased height */
+    width: 350px;  /* Reduced width */
+    min-height: 150px;  /* Increased height */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -903,14 +905,15 @@ body, html {
   }
 
   .role-card h3 {
+    font-family: "Roboto", serif;
     font-size: 5rem !important;  /* Added !important */
     margin-bottom: 2.5rem;
-    font-weight: 500;
+    font-weight: 600 !important;
     color: #333;
   }
 
   .role-card p {
-    font-size: 2rem !important;  /* Added !important */
+    font-size: 3rem !important;  /* Added !important */
     line-height: 1.6;
     margin-bottom: 3.5rem;
     padding: 0 1.5rem;
@@ -922,8 +925,10 @@ body, html {
     padding: 1.6rem;
     border-radius: 50px;
     margin: 0 auto;
-    font-size: 2rem !important;  /* Added !important */
+    font-size: 2.8rem !important;  /* Added !important */
     font-weight: 500;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
   }
 }
 .section-2 {
@@ -933,7 +938,13 @@ body, html {
   position: relative;
 }
 
+.section-2::before {
+  content: '';
+  position: absolute;
 
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 1;
+}
 
 .section-content {
   position: relative;
@@ -943,7 +954,6 @@ body, html {
 }
 
 
-
 .role-heading {
   text-align: center;
   margin-top: 2rem;
@@ -951,7 +961,6 @@ body, html {
   color: #1F2937;
   margin-bottom: 6rem;
   font-weight: 600;
-
   transform: translateY(50px);
 }
 
@@ -977,6 +986,30 @@ body, html {
   margin: 0 auto;  /* Center the container */
 }
 
+
+/* Animation class */
+.visible {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Delay for cards */
+.role-card:nth-child(1).visible {
+  animation-delay: 0.2s;
+}
+
+.role-card:nth-child(2).visible {
+  animation-delay: 0.4s;
+}
+
+.role-card:nth-child(3).visible {
+  animation-delay: 0.6s;
+}
+
+/* Hover effect */
+.role-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
 
 
 
@@ -1089,6 +1122,7 @@ body, html {
   background-position: center;
   background-attachment: fixed;
   color: white;
+  
 }
 
 .vacancies-section {
@@ -2575,3 +2609,66 @@ body, html {
 .testimonial-card:nth-child(1) { transition-delay: 0.2s; }
 .testimonial-card:nth-child(2) { transition-delay: 0.4s; }
 .testimonial-card:nth-child(3) { transition-delay: 0.6s; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.privacy-policy-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.privacy-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.logo-container {
+  margin-bottom: 1rem;
+}
+
+.privacy-logo {
+  max-width: 150px;
+  height: auto;
+}
+
+.privacy-content {
+  line-height: 1.6;
+}
+
+.contact-section {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.contact-details {
+  margin-top: 1rem;
+}
+
+.contact-details p {
+  margin: 0.5rem 0;
+}
+
+.contact-details i {
+  margin-right: 10px;
+  color: #033451;
+}
